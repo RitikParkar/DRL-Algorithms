@@ -7,6 +7,11 @@ Original file is located at
     https://colab.research.google.com/drive/1NAHWFIzRR0bkwW5HNhFXdpbbBhZOEPIt
 """
 
+'''
+Install the libraries at the start only if running on colab. These and the wrap_env function defined further along with the methods before it 
+are only used for rendering the environment on google colab.
+Remove those methods if running on your local system, and simply initiate as gym.make() instead of wrap_env(gym.make())
+'''
 !pip install gym pyvirtualdisplay > /dev/null 2>&1
 
 !nvidia-smi
